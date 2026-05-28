@@ -1,0 +1,58 @@
+body{
+  font-family:Arial;
+  margin:0;
+}
+
+nav{
+  background:#1e3a5f;
+  color:white;
+
+  display:flex;
+  justify-content:space-between;
+
+  padding:20px;
+}
+
+nav ul{
+  display:flex;
+  gap:20px;
+
+  list-style:none;
+}
+
+.hero{
+  height:80vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  background:#3c78c2;
+  color:white;
+}
+
+#servicios{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:20px;
+
+  padding:40px;
+}
+
+.card{
+  background:white;
+
+  padding:20px;
+
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
